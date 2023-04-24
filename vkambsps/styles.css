@@ -18,87 +18,66 @@ body {
     color: #0c1591d5; /* blue */
   }
   
-  /* Use a grid system for layout */
-  .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-  }
-  
-  /* Add a headshot */
-  .headshot {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 1rem;
-  }
-  
-  /* Add icons for skills */
-  .skills li::before {
-    content: "\2022";
-    margin-right: 0.5rem;
-    color: #3c82b7; /* blue */
-  }
-  
-  /* Add a pop of color to the "Download Resume" button */
-  .resume-btn {
-    background-color: #3c82b7; /* blue */
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-    margin: 1rem;
-  }
-  
-  /* Make the page mobile-friendly */
-  @media only screen and (max-width: 768px) {
-    .container {
-      grid-template-columns: 1fr;
-    }
-  
-    .headshot {
-      margin: 0 auto;
-    }
-  }
-  
-  /* Hide all slides by default */
-.slide {
-    display: none;
-  }
-  
-  /* Show the first slide by default */
-  .slide:first-child {
-    display: block;
-  }
-  
-  /* Style the previous and next buttons */
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    background-color: black;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Position the previous button to the left and the next button to the right */
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
+*  {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle; height: 150px; width: 150px;}
 
-  img {
-    height: 150px;
-    width: 150px;
-  }
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
   
