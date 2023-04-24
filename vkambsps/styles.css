@@ -6,8 +6,16 @@ body {
   }
   
   /* Add a pop of color to headings */
-  h1, h2, h3 {
+  h1 {
     color: #0a1af6d5; /* blue */
+  }
+
+  h2 {
+    color: #0f1bb9d5; /* blue */
+  }
+
+  h3 {
+    color: #0c1591d5; /* blue */
   }
   
   /* Use a grid system for layout */
