@@ -88,4 +88,9 @@ body {
   .next {
     right: 0;
   }
+
+  image {
+    height: 150px;
+    width: 150px;
+  }
   
