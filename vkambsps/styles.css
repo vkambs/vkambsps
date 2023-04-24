@@ -2,11 +2,12 @@
 body {
     font-family: "Arial", sans-serif;
     font-size: 16px;
+    background-color: powderblue;
   }
   
   /* Add a pop of color to headings */
   h1, h2, h3 {
-    color: #3c82b7; /* blue */
+    color: #0a1af6d5; /* blue */
   }
   
   /* Use a grid system for layout */
@@ -53,3 +54,38 @@ body {
       margin: 0 auto;
     }
   }
+  
+  /* Hide all slides by default */
+.slide {
+    display: none;
+  }
+  
+  /* Show the first slide by default */
+  .slide:first-child {
+    display: block;
+  }
+  
+  /* Style the previous and next buttons */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Position the previous button to the left and the next button to the right */
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
